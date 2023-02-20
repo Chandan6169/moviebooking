@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="book.css">
+    <llink rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <center>
+        <div class="header">
+        <h1>Movie Ticket Booking</h1>
+    </div>
+    <div class="ticket-image" id="ticket-image">
+        <img src="images/ticet.jpg" class="ticket-pic" alt="Ticket Image">
+        <div class="overlay" id="overlay">
+            <h2>Select your seats</h2>
+            <div class="seat-selection" id="seat-selection">
+                <div class="screen">
+                    <h3>Screen</h3>
+                </div>
+                <div class="seats">
+                    
+                    <div class="row">
+                        <div class="seat available" id="seat-1"></div>
+                        <div class="seat available" id="seat-2"></div>
+                        <div class="seat available" id="seat-3"></div>
+                        <div class="seat available" id="seat-4"></div>
+                        <div class="seat available" id="seat-5"></div>
+                    </div>
+                    <div class="row">
+                        <div class="seat available" id="seat-6"></div>
+                        <div class="seat available" id="seat-7"></div>
+                        <div class="seat available" id="seat-8"></div>
+                        <div class="seat available" id="seat-9"></div>
+                        <div class="seat available" id="seat-10"></div>
+                    </div>
+                    <div class="row">
+                        <div class="seat available" id="seat-11"></div>
+                        <div class="seat available" id="seat-12"></div>
+                        <div class="seat available" id="seat-13"></div>
+                        <div class="seat available" id="seat-14"></div>
+                        <div class="seat available" id="seat-15"></div>
+                    </div>
+                    <div class="row">
+                        <div class="seat available" id="seat-16"></div>
+                        <div class="seat available" id="seat-17"></div>
+                        <div class="seat available" id="seat-18"></div>
+                        <div class="seat available" id="seat-19"></div>
+                        <div class="seat available" id="seat-20"></div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button id="book-button"> Book Tickets</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ticket-details" id="ticket-details">
+        <h2>TICKET DETAILS</h2>
+        <div class="ticket-amount">
+            <label for="ticket-quantity" class="book-ticket">Number of Tickets:</label>
+            <input type="number" id="ticket-quantity" name="ticket-quantity" value="1" min="1"> 
+            <p id="total-amount">Total Amount: 150rs</p>
+        </div>
+        <div class="user-details">
+            <label for="name" class="book-ticket">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email" class="book-ticket">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div><br>
+        <div class="actions">
+            <button id="confirm-button">Confirm Booking</button>
+        </div>
+    </div>
+</center>
+    <script src="ticket.js"></script>
+</body>
+</html>

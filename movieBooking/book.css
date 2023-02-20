@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+    
+  }
+  
+  #theater {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+   
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 50px;
+    margin: 10px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url('images/seat-1-16.png'); 
+    background-size: 40px;
+    
+    
+  }
+  
+  .seat.selected {
+    background-image: url('images/green-chair-15096145.jpg');
+
+  }
+  
+  #booked-seats {
+    margin-top: 20px;
+  }
+  
+  #book-button {
+    margin-top: 20px;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button>a{
+    text-decoration: none;
+    color: yellow;
+
+  }
+   #confirm-button{
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  #confirm-button:hover {
+    background-color: #d00;
+  }
+  .ticket-pic{
+    width: 200px;
+    height: 200px;
+  }
+body{
+  background-image: url('images/cinema-menu-with-movie-tickets.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+ background-position: center;
+}
+.book-ticket {
+  font-style: oblique;
+  font-weight: bold;
+  color: black;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bookNow.css">
+    
+</head>
+
+<body>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img class="movie_photos" src="images/kgf.jpg" style="width:100%">
+            <div class="text">Action Thriller</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img class="movie_photos" src="images/Kantara.jpeg" style="width:100%">
+            <div class="text">Devine</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img class="movie_photos" src="images/Kranti.jpeg" style="width:100%">
+            <div class="text">Family Entertainer</div>
+        </div>
+
+
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div>
+        <section class="booking-form">
+			<h2>BOOK YOUR TICKETS</h2>
+			<form>
+                <label for="seating-arrangement" class="label-text" required>Movie:</label>
+                <select id="sitting" class="drop-down" required>
+                    <option value="standard">--CHOOSE MOVIE--</option>
+					<option value="standard">KGF</option>
+					<option value="premium">KANTARA</option>
+					<option value="premium">KRANTI</option>
+				</select>
+                 <label for="seating-arrangement" class="label-text" required>Category:</label>
+                <select id="sitting" class="drop-down" required>
+                    <option value="standard">--CATEGORY--</option>
+					<option value="standard" required>Standard</option>
+					<option value="premium">Premium</option>
+					
+				</select>
+				<br><BR><label for="date" class="label-text" required>&nbsp;&nbsp;Date:</label>
+				<input type="date" id="date"  required/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+				<label for="time" class="label-text" >Time:</label>
+				<select id="time" class="drop-down" required>
+                    <option value="standard">--SELECT TIME--</option>
+					<option value="time1">10:00 AM</option>
+					<option value="time2">2:00 PM</option>
+					<option value="time3">6:00 PM</option>
+                </select><br>
+                
+                <center><br><br><br><button onclick="page.html" class="btn" ><a href="page.html">Proceed</a></button>  
+    </div></center>
+
+
+
+    <script src="bookNow.js"></script>
+    <script src="bootstrap.js"></script>
+   <script src="jquery.js"></script>
+</body>
+
+</html>
